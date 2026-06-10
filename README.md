@@ -21,9 +21,7 @@ Open [http://localhost:5173](http://localhost:5173). The mock API starts automat
 
 ### 1 — Shipment Tracking Dashboard
 
-Build the main dashboard at `/`.
-
-**Acceptance criteria:**
+Main dashboard at `/`.
 - Fetch and display shipments from `GET /api/shipments`
 - Show status, priority, carrier, destination, and package count
 - Filter by status and/or priority
@@ -40,8 +38,6 @@ Build the main dashboard at `/`.
 ### 2 — AI Route Suggestion Panel
 
 Add an AI routing suggestion feature to the dashboard.
-
-**Acceptance criteria:**
 - For a selected shipment, call `POST /api/ai/route-suggestion`
 - Stream the response **word-by-word** using `response.body.getReader()`
   (this is a `ReadableStream` of raw text — different from the SSE endpoint)
@@ -57,7 +53,7 @@ This component was AI-generated and contains deliberate bugs. Review it, fix all
 ---
 
 
-### 5 — Shift Performance Analytics
+### 4 — Shift Performance Analytics
 
 Analytics view at `/performance` for shift managers.
 
