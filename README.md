@@ -1,16 +1,8 @@
 # GudangKu — Warehouse Shipment Tracker
 
-A take-home assessment for senior frontend engineers. You have **1 hour maximum**.
-
-**Time tracking**
-> We analyze commit timestamps. Build incrementally — commit often. Make your first commit when you start working (even if it's just a placeholder).Your last commit should be within 1 hour of your first. We review commit timestamps to verify the time limit.
-
-**Decision.md (Task 4)**
-> Take a look at Decision.md which contain the template with section headers and guidance comments, and fill it in as you work. Think of it like an engineering journal — document what AI tool you used for what, why you chose a particular architecture, how you handled the ambiguous requirement, etc.
-
 ## Overview
 
-GudangKu is a warehouse management tool used by floor operators on tablets. You'll build a real-time shipment tracking dashboard on top of a pre-built scaffold.
+GudangKu is a warehouse management tool used by floor operators on tablets. Real-time shipment tracking dashboard on top of a pre-built scaffold.
 
 **Context:** Warehouse operators wear gloves and work on 10-inch tablets. Touch targets must be at least 48px. Status indicators must use icons + labels, not color alone (operators may be color-blind or in poor lighting).
 
@@ -27,9 +19,7 @@ Open [http://localhost:5173](http://localhost:5173). The mock API starts automat
 
 ---
 
-## Assessment Tasks
-
-### Task 1 — Shipment Tracking Dashboard _(Senior bar)_
+### 1 — Shipment Tracking Dashboard
 
 Build the main dashboard at `/`.
 
@@ -47,7 +37,7 @@ Build the main dashboard at `/`.
 
 ---
 
-### Task 2 — AI Route Suggestion Panel _(Senior bar)_
+### 2 — AI Route Suggestion Panel
 
 Add an AI routing suggestion feature to the dashboard.
 
@@ -60,39 +50,17 @@ Add an AI routing suggestion feature to the dashboard.
 
 ---
 
-### Task 3 — Code Review: `src/components/ai-generated-component.tsx` _(Senior bar)_
+### 3 — Code Review: `src/components/ai-generated-component.tsx`
 
 This component was AI-generated and contains deliberate bugs. Review it, fix all issues you find, and document your findings.
 
-**Acceptance criteria:**
-- Find and fix all bugs (hint: there are 10 issues of varying severity)
-- Document each issue in `DECISIONS.md`: what it is, severity, and your fix
-- The fixed component should work correctly with all shipments, including those without a carrier phone number
-
-> **Note:** The component is not mounted in the app by default. Import it in `Dashboard.tsx` and render it with a test shipment to verify your fixes work at runtime.
-
 ---
 
-### Task 4 — DECISIONS.md _(ongoing)_
 
-Fill in `DECISIONS.md` as you work. This is reviewed alongside your code. See the template for what to include.
+### 5 — Shift Performance Analytics
 
----
+Analytics view at `/performance` for shift managers.
 
-### Task 5 — Shift Performance Analytics _(Upper Senior+ stretch)_
-
-Build an analytics view at `/performance` for shift managers.
-
-**Attempt only if you have time remaining after Tasks 1–4.**
-
-- Throughput over the shift (shipments processed per hour)
-- Bottleneck identification (which status stage has the longest dwell time)
-- Carrier performance comparison
-- Priority distribution over time
-
-Data source: derive from `GET /api/shipments` using `created_at` / `updated_at`. Document your approach in `DECISIONS.md` Section 6.
-
----
 
 ## API Reference
 
@@ -231,9 +199,5 @@ Terminal states: `delivered`, `cancelled` — no further transitions.
 | MSW | 2 | [mswjs.io](https://mswjs.io/docs/) |
 
 ---
-
-## Submission
-
-Once done, email admin@bukumed.com of your completion. 
 
 **Time limit:** Maximum 1 hours. Tasks 1–4 are the senior bar. Task 5 is Upper Senior stretch — attempt only if time remains.
